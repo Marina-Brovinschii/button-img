@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: darkslateblue;
+            padding: 100px;
+        }
+        .play {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            font-size: 70px;
+            border-radius: 100px;
+            border: none;
+            background-color: transparent;
+        }
+        .play i {
+            transform: translateX(-5px);
+        }
+        .play .bck-1 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            z-index: -1;
+            background-image: url(images.jpg);
+            transform:translateX(18px) translateY(-115px);
+        }
+        .play .bck-2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            z-index: -2;
+            background-image: url(img5.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            opacity: 0.7;
+            transform:translateX(-6.5px) translateY(-140px);
+        }
+        .play .bck-3 {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 100px;
+            border: 2px solid white;
+            border-right: none;
+            border-top: none;
+            z-index:1;
+            transform:translateX(32px) translateY(-20px);
+        }
+        .play .bck-4 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            border: 2px solid white;
+            border-bottom: none;
+            border-right: none;
+            z-index:2;
+            transform:translateX(42px) translateY(-10px);
+        }
+        .play .bck-5 {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+            border: 2px solid white;
+            border-bottom: none;
+            border-left: none;
+            z-index:2;
+            transform:translateX(22px) translateY(-30px);
+        }
+        .play:hover {
+            box-shadow: 0px -4px 15px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <button class="play">
+    <div class="bck-3"></div>
+    <div class="bck-4"></div>
+    <div class="bck-5"></div>
+    <i class="fa-solid fa-music"></i>
+    <div class="bck-1"></div>
+    <div class="bck-2"></div>
+    </button>
+</body>
+</html>
